@@ -1,0 +1,31 @@
+GestCom Online
+il s'agit de faire des commandes en ligne auprès des magazins eléctroménagé (la marcahndise sont machine à laver,la vaissel, tv,...).
+1 - Créer un DB (GESTCOM) qui permet de sauvegarder les commandes des clients en ligne (Table Article, Table Commande, Table Client, Table LigneCommande)
+2 - Créer le script .sql qui permet la création de GESTCOM
+3 - Créer un formulaire d'authentification (authentification.php) (login : email / pw : password)
+*NB : le PW doit être cryptée
+4 - Créer une interface qui permet de valider les lignes de commandes de la commande en question en ligne.
+	a - ihm.php
+	b - Numcom doit être auto increment, DateCom = date système
+	c - Une liste déroulante doit être remplit par Codart et Desigart, un clic sur un article de votre choix remplit automatiquement les zone de texte (designation et prix unitaire)
+	d - la quantité commandée doit être remplit dans une zone de texte (effectué un contrôle de Qtestock) ensuite sur l'evenement lostfocus() le montant ligne sera calculer de façon automatique
+	e - le même traitement précedent sera repétée et le montant total de la commande sera calculé egalement de façon automatique
+	f - il ne reste que la validation de notre commande en question
+Traitement :
+Pour valider une commande :
+	- calculer max+1 de la commande
+	- affecter date système à DateCom
+	- faire le choix de l'article avec la qte
+	- effectué l'insert de Numcom + IDclt et DateCom dans la table commande
+	- à l'intérieur de la boucle effectué l'insert de Numcom, Codart, Qtecmd ligne par ligne dans la table ligne commande
+
+5 - Créer une interface consulation.php qui permet :
+	a - lister les commandes d'un client (paramètre IDclt)
+	b - lister les commandes d'un client entre 2 DateCom, IDclt
+	c - lister les articles d'une commande donnée d'un client
+*Subsidiaire :
+- lister les articles de toutes les commandes d'un client
+*NB : 
+	- exploiter l'architecture troitière (mvc : Modal View Controller)
+	- exploiter l'utilisation des méthodes de mise à jour et les fonctionnalités de jQuery
+	- n'oubliez pas d'effectué l'update de Qtestock

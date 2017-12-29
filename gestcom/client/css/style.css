@@ -1,0 +1,43 @@
+.dropdown1{
+   float:left;
+   margin-top:20px;
+   height:35px;
+   color: white;
+   text-align: center;
+}
+#view{
+  width: 10%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+table{
+  margin-top: 25px;
+}
+
+table tr td,table tr th{
+  text-align: center;
+}
+.datee {
+	margin-left : 10%;
+	margin-right: 10%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.datee input[type=date] {
+  width: 100%; padding: 12px 20px; display: inline-block;
+    border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box
+}
+.dw {
+	width: 50%;
+}
+.menu{
+	display: block;
+    margin-left: 20% ;
+    margin-top : 20px;
+}
+.btn1 {
+	color: white;
+	font-size: 14px
+}

@@ -1,0 +1,76 @@
+/* authentification */
+.authentification{ 
+	width : 40%; position: relative; left: 30%; top :150px; box-shadow: 0px 0px 3px;
+	padding-top: 20px; padding-bottom: 20px; border-radius: 10px;
+}
+.text { text-align: center; font-size: 30px ; color: #d72345}
+.formulaire { width: 90%; position: relative; left: 10% }
+.formulaire input[type=text] {
+	width: 90%; padding: 12px 20px; margin: 8px 0; display: inline-block;
+    border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box
+}
+.formulaire input[type=password] {
+	width: 90%; padding: 12px 20px; margin: 8px 0; display: inline-block;
+    border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box
+}
+.btnn input[type=submit] {
+	width: 90%; padding: 12px 20px; margin: 8px 0; display: inline-block;
+    border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box
+}
+.alert_pw {
+	width: 90%;
+}
+/* /authentification */
+/* Inscription */
+body,html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: auto;
+}
+
+.insc{
+	margin-top: 10%;
+	margin-left: 450px;
+}
+
+.table1 tr td{
+	padding-top: 10px;
+}
+
+#verif{
+	color: red;
+}
+
+.table1 tr td input[type=text]{
+	width: 300px;
+}
+
+/* /Inscription */
+/* profile */
+.nav {
+	width: 100%;
+	
+	background-color: #8386c1;
+}
+#logo {
+	width: 50%;
+   	margin: 10px;
+}
+div.nomprenom{
+	 float:left;
+	 margin-top:8px;
+	 margin-left:11px;
+	 height:35px;
+	 color: white;
+	 text-align: center;
+}
+
+#view{
+	width: 5%;
+	height: auto;
+}
+
+
+/* profile */
